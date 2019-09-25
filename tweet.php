@@ -21,7 +21,5 @@ $sth = $dbh->prepare('SELECT * FROM tweet
             JOIN users
             ON tweet.user_id = users.id
             WHERE tweet.id =' . $tweetId);
-$sth->execute();
-$result = $sth->fetch(PDO::FETCH_ASSOC);
-echo "<pre>" . print_r($result,1 ) . "</pre>";
+
 ?>
